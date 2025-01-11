@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates:ital,wght@1,100&family=Montserrat:ital,wght@0,300;0,400;1,200;1,300;1,400&family=Poppins:ital,wght@0,300;1,200&family=Wix+Madefor+Text:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100vh;
+    background-color: #d0d2f7;
+    overflow: hidden;
+    z-index: 12;
+    transition: .5s;
+    
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+.topbar{
+ position: sticky;
+ height: auto;
+ padding: 8px;
+ padding-right: 60px;
+ font-weight: bold;
+ line-height: 50px;
+ background-color: #7ac1ed;
+ color: white;
+ display: flex;
+ justify-content: space-between;
+ box-shadow: 1px 2px 4px #808081;
+ transition: margin-left .5s;
+
+ }
+ .topbar .toggle{
+    font-size: 30px;
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ /* section{
+    margin-left: 260px;
+ } */
+ .topbar-setting{
+    font-size: 20px;
+ }
+ .topbar-setting .admin, .logout{
+    font-size:30px;
+    margin-left: 10px;
+ }
+ .topbar-setting a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+ }
+ .sideBar-title{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+ }
+ .sidebar .sidebar-image{
+    height: 100px;
+    width: 100px;
+    border-radius: 60%;
+    padding: 10px;
+    background-color: rgb(236, 220, 220);
+    box-shadow: 2px 5px 8px #808081;
+ }
+ .sidebar .sidebar-image img{
+    width: 100%;
+    height: 100%;
+ }
+ .sidebar .sidebar-content{
+    margin: 5px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: sans-serif;
+ }
+ .sidebar .sidebar-content h3{
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #808081;
+ }
+ .sidebar-List{
+    width: 100%;
+    padding: 0%;
+    list-style: none;
+ }
+ .sidebar-List .list-item{
+    width: 100%;
+    margin: 0px;
+    font-size: 20px;
+ }
+ .sidebar-List .list-item a{
+    text-decoration: none;
+    color: #5b5b63;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 10px;
+ }
+ .sidebar-List .list-item:hover{
+    background-color: #cde0eb;
+    border-right: 4px solid green;
+    color: white;
+ }
